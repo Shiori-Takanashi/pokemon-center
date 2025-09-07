@@ -12,3 +12,10 @@ wheels/
 .pytest_cache/
 debug/
 dev/
+out/
+
+# config/urls 配下の toml は無視する
+config/urls/*.toml
+
+# ただし example_com.toml は例外として残す
+!config/urls/example_com.toml

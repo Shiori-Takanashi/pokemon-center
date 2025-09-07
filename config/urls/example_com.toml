@@ -1,0 +1,25 @@
+[site]
+name = "example.com"
+base_url = "https://www.example.com"
+
+[http]
+user_agent = "MyScraper/0.1 (+https://example.org)"
+timeout_sec = 10
+retry_total = 3
+retry_backoff = 0.5
+
+[robots]
+respect = true
+robots_url = "https://www.example.com/robots.txt"
+
+[rate_limit]
+rpm = 30  # requests per minute
+
+[endpoints]
+list = "/items"
+detail = "/items/{id}"
+
+[pagination]
+param = "page"
+start = 1
+max = 50
